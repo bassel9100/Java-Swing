@@ -1,6 +1,6 @@
 public class time_point {
     int sec, min, hour;
-    boolean showSec = false;
+    boolean showSec = true;
 
     public void setTime(int hour, int min, int sec) {
         if (hour > 24 || min > 60 || sec > 60 || hour <= 0 || min <= 0 || sec <= 0)
@@ -17,8 +17,7 @@ public class time_point {
     }
 
     public time_point(int hour, int min){
-        this.hour = hour;
-        this.min = min;
+        this(hour, min, 0);
         setShowSec(false);
     }
 
@@ -56,6 +55,13 @@ public class time_point {
         }
         if(hour == 24){
             hour = 0;
+        }
+    }
+
+    public void tick(int x){
+        while(x > 0){
+            tick();
+            x--;
         }
     }
 }
