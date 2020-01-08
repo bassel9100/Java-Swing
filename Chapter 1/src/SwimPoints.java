@@ -4,6 +4,7 @@ public class SwimPoints {
     public static void main(String[] args){
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
+        int point;
         int result = 0;
         int final_result;
         int difficulty;
@@ -12,7 +13,8 @@ public class SwimPoints {
 
         for(int i = 1; i <= 7; i++){
             String str = JOptionPane.showInputDialog("Enter point for judge nr: " + i);
-            result = result + Integer.parseInt(str);
+            point = Integer.parseInt(str);
+            result = result + point;
             if(result > max) {
                 max = result;
             }
