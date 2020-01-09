@@ -5,7 +5,7 @@ public class Functions {
     }
 
     public static double quadSum(int x, int y){
-        return (x * x) + (y * y;
+        return (x * x) + (y * y);
     }
 
     public static boolean sharedFactor(int x, int y){
