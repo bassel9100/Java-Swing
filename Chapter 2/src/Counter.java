@@ -1,7 +1,7 @@
 public class Counter {
-    int counter;
-    int max;
-    int min;
+    private int counter;
+    private int max;
+    private int min;
 
     public Counter(int counter, int max, int min){
         this.max = max;
