@@ -1,12 +1,17 @@
+import java.text.Collator;
+
 public class Random {
     public static void main(String[] args){
-        time_point t1 = new time_point(11,59);
-        time_point t2 = new time_point(14,30,03);
+    String str = "program";
+    String str2 = "Program";
 
-        t1.tick(120);
-        t2.tick();
+    Collator co = Collator.getInstance();
 
-        System.out.println(t1);
-        System.out.println(t2);
+    if(co.compare(str, str2) > 0)
+        System.out.println(str + " comes before " + str2);
+    else if(co.compare(str, str2) < 0)
+        System.out.println(str2 + " comes before " + str);
+    else
+        System.out.println("De är lika");
     }
 }
