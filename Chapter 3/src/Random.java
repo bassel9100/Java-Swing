@@ -14,6 +14,21 @@ public class Random {
         return false;
     }
 
+    public static void rotation(int[] arr){
+        int temp = arr[arr.length-1];
+        for(int i = arr.length-1; i > 0; i-- )
+            arr[i+1] = arr[i];
+        arr[0] = temp;
+    }
+
+    public static double vectorLength(List<Integer> ls){
+        double sum = 0;
+        for(double x : ls){
+            sum = sum + Math.pow(x,2);
+        }
+        return Math.sqrt(sum);
+    }
+
     public static void main(String[] args){
         double x = E;
         double y = PI;
