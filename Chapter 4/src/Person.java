@@ -2,6 +2,8 @@ public class Person {
     private String name, address;
     private Person spouse;
 
+    public Person() {}
+
     public Person(String name){
         this.name = name;
     }
