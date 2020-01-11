@@ -39,8 +39,8 @@ public class TimePoint {
     @Override
     public String toString(){
         if(showSec)
-            return hour + ":" + min + ":" + sec;
-        return hour + ":" + min;
+            return String.format("%02d:02d:02d", hour, min, sec);
+        return String.format("02d:02d", hour, min);
     }
 
     public void tick(){
