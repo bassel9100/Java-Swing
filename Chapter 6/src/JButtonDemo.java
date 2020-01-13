@@ -34,14 +34,15 @@ public class JButtonDemo extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e){
-        if(e.getSource() == b1)
+        Object b = e.getSource();
+        if(b == b1)
             System.exit(0);
-        else if(e.getSource() == b2){
+        else if(b == b2){
             l1.setText("Welcome!");
             b1.setText("Cancel");
             b2.setEnabled(false);
             b3.setEnabled(true);
-        } else if(e.getSource() == b3){
+        } else if(b == b3){
             l1.setText("Välkommen!");
             b1.setText("Avsluta");
             b2.setEnabled(true);
