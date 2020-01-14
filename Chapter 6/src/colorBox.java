@@ -16,7 +16,7 @@ public class colorBox extends JFrame implements ActionListener{
         l1.setOpaque(true);
         l1.setPreferredSize(new Dimension(100,100));
 
-        box.setMaximumRowCount(5);
+        box.setMaximumRowCount(3);
         box.addActionListener(this);
         setSize(200, 250);
         setVisible(true);

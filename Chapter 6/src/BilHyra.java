@@ -10,7 +10,7 @@ public class BilHyra extends JFrame implements ActionListener {
     private JLabel l3 = new JLabel("Pris Per Dag?", JLabel.RIGHT);
     private JLabel l4 = new JLabel("", JLabel.CENTER);
 
-    private JTextField t1 = new JTextField(15);
+    private JTextField t1 = new JTextField();
     private JTextField t2 = new JTextField(15);
     private JTextField t3 = new JTextField(15);
 
