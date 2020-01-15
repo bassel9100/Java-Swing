@@ -5,7 +5,7 @@ import javax.swing.event.*;
 
 public class OpenHTML extends JFrame implements HyperlinkListener{
     private JEditorPane page = new JEditorPane();
-    //private JScrollPane sp = new ScrollPane(page);
+    private JScrollPane sp = new JScrollPane(page);
 
     public OpenHTML(String adr) throws IOException{
         if(!adr.startsWith("http://") && !adr.startsWith("file:")){
@@ -14,7 +14,7 @@ public class OpenHTML extends JFrame implements HyperlinkListener{
             else
                 adr = "file:" + adr;
             page.setPage(adr);
-            //setContentPane(sp);
+            setContentPane(sp);
             page.setEditable(false);
             page.addHyperlinkListener(this);
             setSize(700,500);
