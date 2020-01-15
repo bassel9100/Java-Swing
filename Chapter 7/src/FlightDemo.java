@@ -16,6 +16,8 @@ public class FlightDemo extends JFrame {
         pack();
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        f2.delay(50+);
+        f2.setForeground(Color.red);
     }
 
     public static void main(String[] args){
