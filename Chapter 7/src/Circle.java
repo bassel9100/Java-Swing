@@ -33,6 +33,14 @@ public class Circle extends JPanel{
 
     public void paintComponent(Graphics g){
         super.paintComponent(g);
-        
+        Insets i = getInsets();
+        int width = getWidth()-i.left-i.right;
+        int height = getHeight()-i.top-i.bottom;
+        int diameter = Math.min(width,height);
+        int x = i.left + (width-diameter)/2;
+        int y = i.top + (height-diameter)/2;
+        double part = (double) (value-min) / (max-min);
+        int filledPart = (int) (part * 360 + 0.5);
+        g.fillArc(x, y, diameter, diameter, 90, -filledPart);
     }
 }
