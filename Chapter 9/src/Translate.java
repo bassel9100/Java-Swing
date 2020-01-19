@@ -46,7 +46,7 @@ public class Translate {
             morse += toMorse(str.charAt(i));
         JOptionPane.showMessageDialog(null, "Translation:'\n" + morse);
 
-        morse = ".- .- .- .- ---.";
+        morse = ".- .- .- .- ---.  .-";
         while(morse.length() > 0){
             int k = morse.indexOf(' ');
             if(k >= 0){
