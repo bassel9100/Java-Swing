@@ -5,8 +5,16 @@ public class House {
     protected int floorCount;
     protected int lastRenovation;
 
+    public House(){};
+
+    public House(double length, double width, int floorCount){
+        this.length = length;
+        this.width = width;
+        this.floorCount = floorCount;
+    }
+
     public double area(){
-        return length * width * lastRenovation;
+        return length * width * floorCount;
     }
 
     public boolean isBigger(House h){

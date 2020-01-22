@@ -11,4 +11,9 @@ public class FamilyHouse extends Apartment {
         super.lastRenovation = outside;
         lastRenovation = inside;
     }
+
+    @Override
+    public double area(){
+        return super.area() * rentPerM2;
+    }
 }
