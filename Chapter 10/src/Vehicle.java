@@ -1,3 +1,3 @@
-public abstract class Vehicle {
+public abstract class Vehicle implements Legal {
     public abstract void print();
 }

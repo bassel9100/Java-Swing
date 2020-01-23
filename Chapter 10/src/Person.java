@@ -1,4 +1,4 @@
-public class Person {
+public class Person extends Owner{
     protected String name, address;
     protected int age;
     protected Person spouse;

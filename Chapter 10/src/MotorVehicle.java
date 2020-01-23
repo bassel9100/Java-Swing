@@ -1,4 +1,4 @@
-public class MotorVehicle extends Vehicle {
+public class MotorVehicle extends Vehicle{
     String regNr;
     public MotorVehicle(String str){
         regNr = str;
