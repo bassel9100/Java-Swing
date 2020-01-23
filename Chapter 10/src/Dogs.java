@@ -16,7 +16,7 @@ public class Dogs extends Mammals {
             return "voff!";
         else if(weight > 10)
             return "Voff!";
-        else 
+        else
             return "WOFFFF!";
     }
 }
