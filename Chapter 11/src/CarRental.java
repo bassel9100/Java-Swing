@@ -2,6 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
 
 public class CarRental extends JFrame implements ActionListener {
 
@@ -43,7 +46,22 @@ public class CarRental extends JFrame implements ActionListener {
    }
 
    public void actionPerformed(ActionEvent e){
-
+       try{
+           Scanner sc1 = new Scanner(j1.getText());
+           double rate = sc1.nextDouble();
+           Scanner sc2 = new Scanner(j2.getText());
+           int days = sc2.nextInt();
+           Scanner sc3 = new Scanner(j3.getText());
+           double price = sc3.nextDouble();
+           double total = days * price;
+           double total2 = total * rate;
+           String str = String.format("The total price will be: %.2f\u20AC (%.2fkr)", total, total2);
+           message.setText(str);
+       } catch(InputMismatchException e1){
+           message.setText("Unrecognized symbols, try again");
+       } catch(NoSuchElementException e2){
+           message.setText("No data, try again");
+       }
    }
 
    public static void main(String[] args){new CarRental();}
