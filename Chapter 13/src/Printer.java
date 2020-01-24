@@ -8,11 +8,13 @@ public class Printer implements Runnable {
     }
 
     public void run(){
-       // while(true)
+       while(!Thread.interrupted())
             try {
                 Thread.sleep(duration * 1000);
                 System.out.println(text + " ");
-            } catch (InterruptedException e) { }
+            } catch (InterruptedException e) {
+                break;
+            }
 
     }
 }
