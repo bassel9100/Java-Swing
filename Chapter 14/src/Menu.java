@@ -29,6 +29,7 @@ public class Menu extends JFrame implements ActionListener{
         l1.setOpaque(true);
 
         setJMenuBar(mb);
+        mb.add(menu);
         menu.add(smallM); menu.add(mediumM); menu.add(largeM);
         menu.add(backCol);
         menu.add(left); menu.add(center); menu.add(right);
