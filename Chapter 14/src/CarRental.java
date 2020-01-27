@@ -4,16 +4,16 @@ import javax.swing.*;
 import java.util.*;
 
 public class CarRental extends JFrame implements ActionListener {
-    JTextField exchange = new JTextField(15);
-    JTextField dayPrice  = new JTextField(15);
-    JTextField price = new JTextField(15);
-    JLabel l1 = new JLabel("Excnage? ", JLabel.RIGHT);
-    JLabel l2 = new JLabel("How many days? ",  JLabel.RIGHT);
-    JLabel l3 = new JLabel("Price Per Day? ", JLabel.RIGHT);
-    JPanel p = new JPanel();
-    JLabel result = new JLabel();
-    JPanel p2 = new JPanel();
-    JButton newCount = new JButton("New Count");
+    private JTextField exchange = new JTextField(15);
+    private JTextField dayPrice  = new JTextField(15);
+    private JTextField price = new JTextField(15);
+    private JLabel l1 = new JLabel("Exchange? ", JLabel.RIGHT);
+    private JLabel l2 = new JLabel("How many days? ",  JLabel.RIGHT);
+    private JLabel l3 = new JLabel("Price Per Day? ", JLabel.RIGHT);
+    private JPanel p = new JPanel();
+    private JLabel result = new JLabel();
+    private JPanel p2 = new JPanel();
+    private JButton newCount = new JButton("New Count");
     static int windowNr = 0;
 
     public CarRental() {
@@ -40,7 +40,7 @@ public class CarRental extends JFrame implements ActionListener {
 
         setLocation(50*windowNr, 50*windowNr); //Change window location each time we create a new JFrame
         windowNr++;
-        setVisible(true);  
+        setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
