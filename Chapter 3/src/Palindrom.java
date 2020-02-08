@@ -1,23 +1,29 @@
-import javax.swing.*;
+import static javax.swing.JOptionPane.*;
 
 public class Palindrom {
 
-    public static boolean isPalindrom(String str){
-        int x = str.length();
-        int j, i;
-        for(i = 0, j = x-1; i < j; i++, j--){
-            if(str.charAt(i) != str.charAt(j))
+    protected static boolean isPalindrom(String str){
+        int firstLetter = 0;
+        int lastLetter = str.length()-1;
+        System.out.print(str.length());
+        while(firstLetter <= lastLetter){
+            if(str.charAt(firstLetter) != str.charAt(lastLetter))
                 return false;
+            firstLetter++;
+            lastLetter--;
         }
         return true;
     }
 
-    public static void main(String[] args){
-        String word = JOptionPane.showInputDialog("Enter a word");
-        if(isPalindrom(word.toLowerCase()))
-            JOptionPane.showMessageDialog(null, "It's a palindrome!");
+    void program(){
+        String word = showInputDialog("Enter a random word to check if its a Palindrome");
+        if(isPalindrom(word))
+            showMessageDialog(null, "The word " + word + " is a Palindrome!");
         else
-            JOptionPane.showMessageDialog(null, "It's NOT a palindrome!");
+            showMessageDialog(null, "The word " + word + " NOT is a Palindrome!");
+    }
 
+    public static void main(String[] args){
+        new Palindrom().program();
     }
 }
