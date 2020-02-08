@@ -1,3 +1,5 @@
+package chapter3;
+
 public class C {
     private static int count;
     private int id;

@@ -1,3 +1,5 @@
+package chapter3;
+
 import javax.swing.*;
 import java.util.*;
 import static java.lang.Math.*;
