@@ -13,7 +13,7 @@ public class Gas {
 
         double total = gas;
 
-        System.out.printf("First timepoint: %04d %s %s %s", gas, date, time, cardNr);
+        System.out.printf("First time point: %04d %s %s %s", gas, date, time, cardNr);
         while(sc.hasNext()){
              gas = sc.nextDouble();
              total += gas;
@@ -21,7 +21,7 @@ public class Gas {
              time = sc.next();
              cardNr = sc.next();
         }
-        System.out.printf("Last timepoint: %04d %s %s %s", gas, date, time, cardNr);
+        System.out.printf("Last time point: %04d %s %s %s", gas, date, time, cardNr);
         System.out.printf("Total amount gas ", total);
     }
 }
