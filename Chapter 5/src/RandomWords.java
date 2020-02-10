@@ -7,7 +7,6 @@ public class RandomWords {
 
     public RandomWords(String name) throws IOException {
         fileName = name;
-        Scanner sc = new Scanner(new File(fileName));
         BufferedReader f = new BufferedReader(new FileReader(fileName));
         while(f.readLine() != null)
             count++;
