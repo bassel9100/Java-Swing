@@ -9,7 +9,7 @@ public class Border4 extends JFrame {
         LineBorder b2 = new LineBorder(Color.orange, 5);
         LineBorder b3 = new LineBorder(Color.red, 5);
         LineBorder b4 = new LineBorder(Color.magenta, 5);
-        JLabel l = new JLabel("Hej", JLabel.CENTER);
+        JLabel l = new JLabel("Yall Need To Chill!", JLabel.CENTER);
         l.setBorder(new CompoundBorder(new CompoundBorder(new CompoundBorder(b4, b3), b2), b1));
         add(l);
         setSize(200, 200);
