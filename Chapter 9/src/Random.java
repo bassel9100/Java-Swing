@@ -1,23 +1,20 @@
+import java.awt.*;
 import java.util.*;
+import javax.swing.*;
 
-public class Random {
-    public static void main(String[] args){
-        Methods m1 = new Methods();
-        int[] arr = new int[10];
-        String[] str = {"first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eight", "ninth", "tenth and last"};
-        Scanner sc = new Scanner(System.in);
-        for(int i = 0; i < 10; i++){
-            System.out.print("Please enter the " + str[i] + " number: ");
-            arr[i] = sc.nextInt();
-        }
-        System.out.println(Arrays.toString(arr));
-        m1.bubbleSort(arr);
-        System.out.println(Arrays.toString(arr));
-        System.out.println("Which number are you searching for?");
-        int x = sc.nextInt();
-        m1.binarySearch(arr, x);
+public class Random extends JFrame {
+    TicTacToe t1 = new TicTacToe();
 
-        System.out.println(m1.linearSearch(arr, 8));
-
+    public void Random(){
+        t1.placeSign('x', 0,0);
+        t1.placeSign('x', 0,1);
+        t1.placeSign('o', 0,2);
+        setLayout(new FlowLayout());
+        add(t1);
+        pack();
+        setVisible(true);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
+
+    public static void main(String[] args){ new Random();}
 }

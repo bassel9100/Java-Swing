@@ -8,5 +8,4 @@ public interface Display {
     public int whatDisplay();
 
     public void setUpDisplay();
-
 }

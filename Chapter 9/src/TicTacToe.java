@@ -55,7 +55,8 @@ public class TicTacToe extends JPanel {
                 if(arr[m][n] == 'x'){
                     g.drawLine(n*x, m*y, (n+1)*x, (m+1)*y);
                     g.drawLine((n+1)*x, n*y, n*x, (m+1)*y);
-                }
+                } else if(arr[m][n] == 'o')
+                    g.drawOval(n*x, m*y, x, y);
             }
     }
 }
