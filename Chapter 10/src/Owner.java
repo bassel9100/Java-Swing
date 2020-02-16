@@ -5,7 +5,7 @@ public abstract class Owner {
 
     private List<Legal> ls = new LinkedList<>();
 
-    public void buy(Legal l){
+    public final void buy(Legal l){
         if(!ls.contains(l))
             ls.add(l);
     }
