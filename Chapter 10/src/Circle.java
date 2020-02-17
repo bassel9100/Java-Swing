@@ -18,4 +18,9 @@ public class Circle extends Figure {
     public double area(){
         return Math.PI*radius*radius;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        return false;
+    }
 }

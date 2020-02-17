@@ -19,4 +19,6 @@ public abstract class Figure {
     }
 
     public abstract double area();
+
+    public abstract boolean equals(Object obj);
 }

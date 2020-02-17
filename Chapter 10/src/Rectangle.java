@@ -16,4 +16,15 @@ public class Rectangle extends Figure {
     public double area(){
         return l*w;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == null || obj.getClass() != getClass())
+            return false;
+        else{
+            Rectangle r = (Rectangle) obj;
+            return this.area() == r.area();
+        }
+    }
+
 }
