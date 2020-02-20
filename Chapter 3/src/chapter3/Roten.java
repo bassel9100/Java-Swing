@@ -15,7 +15,7 @@ public class Roten {
         while(abs(g-h) >= 1e-6){
             g = h;
             h = (g + x/g)/2;
-        }c
+        }
         return h;
     }
 }
