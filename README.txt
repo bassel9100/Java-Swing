@@ -1,1 +1,1 @@
-Solutions to all Chapters in JAva Direkt book
+Solutions to almost all Chapters in Java Direkt book
