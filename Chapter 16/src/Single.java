@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
+import java.util.List;
 
-public class Single {
+public class Single <T> {
+    private List<T> ls;
 }
