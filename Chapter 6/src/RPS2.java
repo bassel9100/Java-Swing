@@ -105,6 +105,5 @@ public class RPS2 extends JFrame implements ActionListener {
 
     public static void main(String[] args){
         new RPS2();
-
     }
 }
