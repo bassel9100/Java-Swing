@@ -2,17 +2,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.io.*;
 
-import static java.lang.System.out;
-
 public abstract class Fordon {
     public abstract void init();
     public abstract void skriv();
 
-    public List<Fordon> skapaList(){
+    public static List<Fordon> skapaLista(){
         List<Fordon> ls = new ArrayList<>();
         Console c = System.console();
         while(true){
-            String typ = c.readLine("Typ av fordon?");
+            System.out.println("Typ av fordon?");
+            String typ = c.readLine();
             if(typ == null)
                  break;
             try{
@@ -28,9 +27,5 @@ public abstract class Fordon {
             }
         }
         return ls;
-    }
-
-    public void sayWhat(){
-        out.println("SAYYYY WHAAATTTTT???");
     }
 }

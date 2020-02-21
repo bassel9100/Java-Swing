@@ -12,6 +12,6 @@ public class Cykel extends Fordon {
 
     @Override
     public void init(){
-        antalVäxlar = Integer.parseInt("Antal växlar?: ");
+        antalVäxlar = Integer.parseInt(System.console().readLine("Antal växlar?: "));
     }
 }
